@@ -68,7 +68,7 @@ class MarkovNGramChain:
 	def _calculate_starts(self):			
 		self.starts = [s for s in self.norm_map if len(s)>0 and s[0]=='#']
 	
-	def	_generate_sentence(self):
+	def _generate_sentence(self):
 		norm_map = self.norm_map
 		start = random.choice(list(self.starts)) # sentence start ngram
 		result = last = start
